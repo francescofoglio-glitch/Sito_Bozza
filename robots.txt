@@ -1,0 +1,4 @@
+# BOZZA: in produzione sostituire con le regole definitive
+User-agent: *
+Disallow: /
+# Alla pubblicazione: Allow: / e riga Sitemap: https://www.francescofoglio.it/sitemap.xml
