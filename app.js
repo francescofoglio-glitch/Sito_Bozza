@@ -75,6 +75,15 @@
 })();
 
 (function(){
+  var links = document.querySelectorAll('.pb-side .toc2 a'); if(!links.length || !('IntersectionObserver' in window)) return;
+  var map = {}; links.forEach(function(a){ map[a.getAttribute('href').slice(1)] = a; });
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ links.forEach(function(a){ a.classList.remove('on'); }); var a = map[en.target.id]; if(a) a.classList.add('on'); } });
+  }, {rootMargin:'-90px 0px -65% 0px'});
+  Object.keys(map).forEach(function(id){ var el = document.getElementById(id); if(el) io.observe(el); });
+})();
+
+(function(){
   var tabs = document.querySelectorAll('.ftabs button'); if(!tabs.length) return;
   tabs.forEach(function(t){ t.addEventListener('click', function(){
     tabs.forEach(function(x){ x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });

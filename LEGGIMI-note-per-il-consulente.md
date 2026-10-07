@@ -34,6 +34,7 @@ Modello di riferimento per l'impostazione: iainazienda.it (ingresso per tipo di 
 
 ## Scelte tecniche già fatte
 - Nessun font o script esterno. Su WordPress i caratteri andranno ospitati in locale.
+- Le pagine del playbook hanno un menu laterale fisso con i capitoli, le sezioni della pagina corrente (con evidenziazione di quella in lettura) e un rimando a Frida. Su mobile diventa un indice a comparsa in cima alla pagina.
 - Tema chiaro e scuro, con preferenza salvata nel browser.
 - Il dominio nei tag `canonical` e nei dati strutturati (`www.francescofoglio.it`) è un segnaposto.
 
@@ -54,5 +55,6 @@ Modello di riferimento per l'impostazione: iainazienda.it (ingresso per tipo di 
 - La struttura a pagine separate e le categorie degli articoli sono adatte alla strategia di contenuti?
 - Quali ricerche conviene presidiare con i titoli attuali?
 - Gli URL sono adeguati per WordPress o servono percorsi diversi (per esempio `/playbook/capitolo-1`)?
+- Il menu laterale del playbook e le voci del menu principale sono adatti, o conviene una navigazione diversa?
 - Come conviene collegare playbook (gratuito), corso, consulenza e Frida (strumento) senza che il sito sembri un catalogo di prodotti?
 - Come conviene distinguere nei risultati di ricerca playbook (gratuito), corso (a pagamento) e consulenza?
