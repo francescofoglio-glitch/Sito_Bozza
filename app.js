@@ -75,6 +75,33 @@
 })();
 
 (function(){
+  var tabs = document.querySelectorAll('.ftabs button'); if(!tabs.length) return;
+  tabs.forEach(function(t){ t.addEventListener('click', function(){
+    tabs.forEach(function(x){ x.setAttribute('aria-selected', x === t ? 'true' : 'false'); });
+    document.querySelectorAll('.fpane').forEach(function(p){ p.classList.toggle('on', p.id === t.getAttribute('data-fpane')); });
+  }); });
+  function val(n){ var e = document.querySelector('input[name="'+n+'"]:checked'); return e ? e.value : ''; }
+  function intake(){
+    var area = val('farea'), trans = val('ftrans'), priv = val('fpriv'), chip, title, body = [];
+    if(area === 'hr' || area === 'credit' || area === 'edu'){ chip = 'bad'; title = 'Da approfondire: possibile area ad alto rischio'; body.push('L\'area indicata può rientrare tra quelle ad alto rischio. Serve una valutazione approfondita che verifichi il caso concreto.'); }
+    else if(trans === 'no'){ chip = 'warn'; title = 'Limitato: da sistemare la trasparenza'; body.push('Gli utenti dovrebbero sapere di interagire con un sistema di AI. Frida apre un\'azione per chi governa.'); }
+    else { chip = 'ok'; title = 'Nessun elemento di rilievo emerso'; body.push('Dalle risposte non emergono aree particolari. Chi governa conferma o integra.'); }
+    if(priv === 'yes'){ body.push('Poiché sono trattati dati personali, Frida suggerisce di coinvolgere chi si occupa di privacy.'); }
+    document.getElementById('fres').innerHTML = '<span class="chip '+chip+'">Indicazione</span> <b>'+title+'</b><p style="margin:8px 0 0;color:var(--muted)">'+body.join(' ')+'</p>';
+  }
+  document.querySelectorAll('#fp2 input').forEach(function(i){ i.addEventListener('change', intake); });
+  intake();
+  var reg = document.getElementById('freg');
+  if(reg){ reg.addEventListener('click', function(){
+    var n = document.getElementById('fname').value.trim(), el = document.getElementById('fregres');
+    el.style.display = 'block';
+    if(!n){ el.innerHTML = '<b>Inserisci il nome del modello</b><p style="margin:8px 0 0;color:var(--muted)">Il nome serve per riconoscerlo nell\'inventario.</p>'; return; }
+    var base = val('fbase');
+    el.innerHTML = '<span class="chip">Registrato</span> <b>'+ n.replace(/[<>&]/g,'') +'</b><p style="margin:8px 0 0;color:var(--muted)">Aggiunto all\'inventario con livello di rischio "Da valutare" e supervisione umana "Da definire". ' + (base === 'gpai' ? 'Poiché si basa su un modello di terzi, Frida chiede la documentazione del fornitore.' : 'Frida chiede la documentazione tecnica interna.') + '</p>';
+  }); }
+})();
+
+(function(){
   document.querySelectorAll('.video').forEach(function(v){
     var btn = v.querySelector('button'); if(!btn) return;
     btn.addEventListener('click', function(){

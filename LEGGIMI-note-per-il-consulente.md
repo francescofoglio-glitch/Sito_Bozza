@@ -14,6 +14,7 @@ Modello di riferimento per l'impostazione: iainazienda.it (ingresso per tipo di 
 | Articoli | articoli.html | Elenco con filtro per categoria (AI Act, Governance, GDPR, Formazione) |
 | | articolo-cosa-non-delegare-ai.html | Esempio completo di articolo con video, fonti e passo successivo |
 | Playbook | playbook.html e capitoli | Contenuto di punta, gratuito: 4 capitoli, demo e risorse |
+| Frida | frida.html | Pagina prodotto: dal playbook allo strumento, funzioni con stato, demo, principi, pilota. Collegata da home, playbook, consulenza, corso e chi sono |
 | Consulenza | consulenza.html | Servizi come percorso, modo di lavorare, domande frequenti, contatto |
 | Corsi | corsi.html | Catalogo e formule di acquisto (professionisti e organizzazioni) |
 | | corso-governance-ai-compliance.html | Scheda del corso: esiti, programma, modalità, acquisto, lista d'attesa |
@@ -39,6 +40,7 @@ Modello di riferimento per l'impostazione: iainazienda.it (ingresso per tipo di 
 ## Segnaposto ancora aperti
 - Prezzi, durate e perimetro dei servizi di consulenza, e confini dell'incarico (da validare con un professionista).
 - Piattaforma di vendita e di erogazione del corso, listino, licenze per organizzazioni, recesso per i consumatori, durata dell'accesso.
+- Frida: ragione sociale del titolare, validazione indipendente, sottotitolo "assistente qualificato", ricerca di anteriorità sul nome, modulo del pilota, listino.
 - Natura dell'attestato del corso: di completamento, non accreditato.
 - Articoli reali al posto dei titoli di lavoro, con categorie e video.
 - Biografia della pagina "Chi sono", link di contatto e di profilo.
@@ -52,4 +54,5 @@ Modello di riferimento per l'impostazione: iainazienda.it (ingresso per tipo di 
 - La struttura a pagine separate e le categorie degli articoli sono adatte alla strategia di contenuti?
 - Quali ricerche conviene presidiare con i titoli attuali?
 - Gli URL sono adeguati per WordPress o servono percorsi diversi (per esempio `/playbook/capitolo-1`)?
+- Come conviene collegare playbook (gratuito), corso, consulenza e Frida (strumento) senza che il sito sembri un catalogo di prodotti?
 - Come conviene distinguere nei risultati di ricerca playbook (gratuito), corso (a pagamento) e consulenza?
