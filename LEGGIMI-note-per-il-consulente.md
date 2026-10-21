@@ -5,56 +5,58 @@ Bozza completa del sito, per una prima validazione e per discutere composizione,
 ## Come aprirla
 Apri `index.html` con un browser. Le pagine sono file statici collegati tra loro, senza server e senza richieste a servizi esterni. Il video dell'articolo di esempio si carica solo dopo un clic.
 
-## Struttura del sito
-Modello di riferimento per l'impostazione: iainazienda.it (ingresso per tipo di pubblico, percorso, servizi, corso con acquisto, domande frequenti).
+## Gerarchia decisa
+Obiettivo del sito: posizionare l'autore come professionista competente e portare i visitatori ai corsi, che sono il prodotto passivo. La consulenza resta in secondo piano finché l'autore non è pronto a proporla. Ne derivano queste scelte:
+1. **Un solo invito forte in home**: il corso introduttivo all'AI Act. Il pulsante in alto e quello nel contenuto portano lì.
+2. **Menu ridotto**: Corsi, Articoli, Playbook, Chi sono.
+3. **Formazione in azienda e consulenza**: pagina raggiungibile dai corsi e dal piè di pagina, senza "Prenota una call" in evidenza.
+4. **Frida**: link discreto, nel piè di pagina, nel menu laterale del playbook, nella panoramica del playbook e in Chi sono. Fuori dal menu principale.
+5. **Corsi a gradini**: introduzione generale (circa mezz'ora) per tutti, poi pacchetti per funzione (Compliance, poi eventualmente Marketing e comunicazione, Risorse umane), da testare prima di produrli. La formazione in presenza è un valore aggiunto dei corsi.
+6. **Possibile sviluppo futuro**: spostare i corsi su un secondo sito e dedicare questo dominio a competenza e consulenza.
 
+## Struttura del sito
 | Sezione | File | Funzione |
 |---|---|---|
-| Home | index.html | Ingresso per pubblico (organizzazione, professionista, lettore), percorso comprendere / applicare / mantenere, ultimi articoli, corso, consulenza |
-| Articoli | articoli.html | Elenco con filtro per categoria (AI Act, Governance, GDPR, Formazione) |
-| | articolo-cosa-non-delegare-ai.html | Esempio completo di articolo con video, fonti e passo successivo |
-| Playbook | playbook.html e capitoli | Contenuto di punta, gratuito: 4 capitoli, demo e risorse |
-| Frida | frida.html | Pagina prodotto: dal playbook allo strumento, funzioni con stato, demo, principi, pilota. Collegata da home, playbook, consulenza, corso e chi sono |
-| Consulenza | consulenza.html | Servizi come percorso, modo di lavorare, domande frequenti, contatto |
-| Corsi | corsi.html | Catalogo e formule di acquisto (professionisti e organizzazioni) |
-| | corso-governance-ai-compliance.html | Scheda del corso: esiti, programma, modalità, acquisto, lista d'attesa |
-| Chi sono | chi-sono.html | Presentazione, metodo, collegamenti ai servizi |
-
-## Convenzioni editoriali previste
-- Un articolo può avere un video. Su WordPress: formato articolo "Video" e un campo con il codice del video. Il video appare in cima e si carica solo al clic (YouTube nelle impostazioni senza cookie).
-- Ogni articolo finisce con un passo successivo coerente con il tema: capitolo del playbook, corso o consulenza.
-- Le fonti normative stanno in una sezione "Fonti" alla fine di ogni articolo.
+| Home | index.html | Un solo invito (corso introduttivo), percorso a gradini, articoli, playbook, chi sono |
+| Corsi | corsi.html | Catalogo a gradini e formazione in azienda |
+| | corso-introduzione-ai-act.html | Primo corso: circa mezz'ora, programma, acquisto, lista d'attesa |
+| | corso-governance-ai-compliance.html | Pacchetto Compliance (nove moduli, circa sei ore) |
+| Articoli | articoli.html, articolo-cosa-non-delegare-ai.html | Elenco con filtro e un articolo di esempio con video |
+| Playbook | playbook.html e capitoli | Contenuto gratuito di competenza: 4 capitoli, demo, risorse |
+| Chi sono | chi-sono.html | Presentazione e metodo |
+| In azienda | consulenza.html | Formazione in azienda e consulenza |
+| Frida | frida.html | Pagina prodotto dello strumento |
 
 ## Cosa chiediamo di rivedere
-1. **Composizione.** Percorso del lettore, ruolo del playbook rispetto agli articoli, posizione di corsi e consulenza, titoli e lunghezze.
-2. **SEO.** Titoli e descrizioni, URL, un solo H1 per pagina, breadcrumb, dati strutturati (WebSite, Person, Article, Course, Service, BreadcrumbList), collegamenti interni, parole chiave da presidiare, struttura delle categorie.
-3. **Contenuto e prove di fiducia.** Cosa può essere dichiarato oggi e cosa no (nessun numero di clienti, nessuna testimonianza inventata).
-4. **Funnel e conversione.** Punti di contatto, lista d'attesa del corso, acquisto, call conoscitiva.
+1. **Composizione e gerarchia.** Il percorso del lettore verso il corso introduttivo, il ruolo del playbook e degli articoli come attrazione, il peso dato a consulenza e a Frida.
+2. **SEO.** Titoli e descrizioni, URL, un solo H1 per pagina, breadcrumb, dati strutturati, collegamenti interni, parole chiave da presidiare per i due pubblici (professionista di PMI e professionista della compliance).
+3. **Contenuto e prove di fiducia.** Cosa può essere dichiarato oggi e cosa no.
+4. **Funnel.** Lista d'attesa, acquisto, bivio finale del corso (approfondire o contattare).
 5. **Accessibilità e prestazioni.**
 
 ## Scelte tecniche già fatte
 - Nessun font o script esterno. Su WordPress i caratteri andranno ospitati in locale.
-- Le pagine del playbook hanno un menu laterale fisso con i capitoli, le sezioni della pagina corrente (con evidenziazione di quella in lettura) e un rimando a Frida. Su mobile diventa un indice a comparsa in cima alla pagina.
+- Menu laterale fisso nelle pagine del playbook, con indice a comparsa su mobile.
 - Tema chiaro e scuro, con preferenza salvata nel browser.
 - Il dominio nei tag `canonical` e nei dati strutturati (`www.francescofoglio.it`) è un segnaposto.
 
 ## Segnaposto ancora aperti
-- Prezzi, durate e perimetro dei servizi di consulenza, e confini dell'incarico (da validare con un professionista).
-- Piattaforma di vendita e di erogazione del corso, listino, licenze per organizzazioni, recesso per i consumatori, durata dell'accesso.
-- Frida: ragione sociale del titolare, validazione indipendente, sottotitolo "assistente qualificato", ricerca di anteriorità sul nome, modulo del pilota, listino.
-- Natura dell'attestato del corso: di completamento, non accreditato.
+- Prezzo di ingresso del corso introduttivo (anche gratuito per costruire la lista), piattaforma di vendita e di erogazione, licenze per organizzazioni, recesso per i consumatori, durata dell'accesso.
+- Contenuti e calendario dell'AI Act nel corso introduttivo: da validare sul testo ufficiale in vigore.
+- Natura dell'attestato: di completamento, non accreditato.
+- Pacchetti Marketing e comunicazione e Risorse umane: solo se la domanda lo conferma.
 - Articoli reali al posto dei titoli di lavoro, con categorie e video.
-- Biografia della pagina "Chi sono", link di contatto e di profilo.
+- Biografia di "Chi sono", link di contatto e di profilo.
 - Moduli newsletter e lista d'attesa, calendario per la call, informative privacy e cookie.
-- Casi studio: solo con consenso scritto. Caso del capitolo 4: da confermare come anonimizzato e pubblicabile.
-- Immagine per le anteprime social.
-- Versione in inglese in un secondo momento: tag `hreflang` e strategia di URL.
+- Perimetro della consulenza e della formazione in azienda, da validare con un professionista.
+- Frida: titolare, validazione, sottotitolo, ricerca di anteriorità sul nome.
+- Casi studio: solo con consenso scritto. Caso del capitolo 4 da confermare come anonimizzato.
+- Immagine per le anteprime social e versione in inglese (tag `hreflang`).
 - Prima della pubblicazione: rimuovere `noindex` e sostituire `robots.txt`.
 
 ## Domande per il consulente
-- La struttura a pagine separate e le categorie degli articoli sono adatte alla strategia di contenuti?
-- Quali ricerche conviene presidiare con i titoli attuali?
-- Gli URL sono adeguati per WordPress o servono percorsi diversi (per esempio `/playbook/capitolo-1`)?
-- Il menu laterale del playbook e le voci del menu principale sono adatti, o conviene una navigazione diversa?
-- Come conviene collegare playbook (gratuito), corso, consulenza e Frida (strumento) senza che il sito sembri un catalogo di prodotti?
-- Come conviene distinguere nei risultati di ricerca playbook (gratuito), corso (a pagamento) e consulenza?
+- Il corso introduttivo come unico invito in home è la scelta migliore per i due pubblici?
+- Quali ricerche conviene presidiare per portare traffico verso il corso introduttivo?
+- Gli URL sono adeguati per WordPress o servono percorsi diversi?
+- Quando ha senso separare i corsi su un secondo sito?
+- Come collegare gli articoli al corso senza appesantire la lettura?
