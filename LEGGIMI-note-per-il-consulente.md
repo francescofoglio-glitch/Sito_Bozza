@@ -7,7 +7,8 @@ Apri `index.html` con un browser. Le pagine sono file statici collegati tra loro
 
 ## Gerarchia decisa
 Obiettivo del sito: posizionare l'autore come professionista competente e portare i visitatori ai corsi, che sono il prodotto passivo. La consulenza resta in secondo piano finché l'autore non è pronto a proporla. Ne derivano queste scelte:
-1. **Un solo invito forte in home**: il corso introduttivo all'AI Act. Il pulsante in alto e quello nel contenuto portano lì.
+1. **Un solo invito forte in home**: la lista d'attesa del corso introduttivo all'AI Act, con modulo email direttamente sotto il titolo. Il sito va online prima che il corso sia pronto, quindi il primo obiettivo è raccogliere contatti da avvisare all'apertura. Il pulsante in alto e le fasce di invito portano allo stesso modulo.
+1bis. **Chi sono subito sotto il titolo**, per costruire autorevolezza prima del percorso.
 2. **Menu ridotto**: Corsi, Articoli, Playbook, Chi sono.
 3. **Formazione in azienda e consulenza**: pagina raggiungibile dai corsi e dal piè di pagina, senza "Prenota una call" in evidenza.
 4. **Frida**: link discreto, nel piè di pagina, nel menu laterale del playbook, nella panoramica del playbook e in Chi sono. Fuori dal menu principale.
@@ -40,7 +41,12 @@ Obiettivo del sito: posizionare l'autore come professionista competente e portar
 - Tema chiaro e scuro, con preferenza salvata nel browser.
 - Il dominio nei tag `canonical` e nei dati strutturati (`www.francescofoglio.it`) è un segnaposto.
 
+## Lista d'attesa
+I moduli sono presenti in home (in alto e in fondo), nella pagina Corsi, nel corso introduttivo (in alto e in fondo) e nel pacchetto Compliance. Nella bozza sono dimostrativi e non inviano né salvano nulla. Su WordPress vanno sostituiti con un plugin di newsletter, con consenso esplicito, informativa privacy, conferma via email e un campo "interesse" (generale, intro, compliance).
+
 ## Segnaposto ancora aperti
+- Foto e elementi di credibilità nella sezione Chi sono della home.
+- Strumento e impostazioni della lista d'attesa (doppio consenso, informativa, nomina del fornitore a responsabile del trattamento).
 - Prezzo di ingresso del corso introduttivo (anche gratuito per costruire la lista), piattaforma di vendita e di erogazione, licenze per organizzazioni, recesso per i consumatori, durata dell'accesso.
 - Contenuti e calendario dell'AI Act nel corso introduttivo: da validare sul testo ufficiale in vigore.
 - Natura dell'attestato: di completamento, non accreditato.

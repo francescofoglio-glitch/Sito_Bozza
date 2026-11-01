@@ -28,13 +28,23 @@
     <span><b>Francesco Foglio</b><small>AI e governance per la compliance</small></span>
   </a>
   <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-expanded="false">Menu</button>
-  <nav class="main" id="mainNav" aria-label="Principale"><a href="corsi.html" aria-current="page">Corsi</a><a href="articoli.html">Articoli</a><a href="playbook.html">Playbook</a><a href="chi-sono.html">Chi sono</a><a class="btn sm" href="corso-introduzione-ai-act.html">Inizia dal corso</a></nav>
+  <nav class="main" id="mainNav" aria-label="Principale"><a href="corsi.html" aria-current="page">Corsi</a><a href="articoli.html">Articoli</a><a href="playbook.html">Playbook</a><a href="chi-sono.html">Chi sono</a><a class="btn sm" href="corso-introduzione-ai-act.html#lista-attesa">Lista d'attesa</a></nav>
 </div></header>
 <main id="content"><div class="wrap narrow"><nav class="crumbs" aria-label="Percorso"><a href="index.html">Home</a> / <a href="corsi.html">Corsi</a> / Introduzione all'AI Act</nav>
 <p class="kicker">Corso introduttivo</p>
 <h1 class="ch-title">Introduzione all'AI Act</h1>
 <p class="lead">In circa mezz'ora capisci cosa prevede il regolamento europeo sull'intelligenza artificiale, se ti riguarda e da dove cominciare. Senza gergo tecnico.</p>
-<p><span class="chip warn">In preparazione</span> <a class="btn" href="#lista-attesa">Avvisami quando apre</a></p>
+<p><span class="chip warn">In preparazione</span></p>
+<div class="wl-box" id="lista-attesa">
+  <p class="wl-title">Ti avviso quando il corso apre</p>
+  <form class="wl" data-waitlist novalidate>
+  <input type="hidden" name="interesse" value="intro">
+  <label class="wl-label" for="wl-intro-top">La tua email</label>
+  <div class="wl-row"><input id="wl-intro-top" type="email" name="email" placeholder="nome@esempio.it" autocomplete="email" required><button class="btn" type="submit">Avvisami quando apre</button></div>
+  <label class="wl-consent"><input type="checkbox" name="consenso" required> <span>Acconsento al trattamento della mia email per ricevere l'avviso di apertura, secondo l'informativa privacy. Posso cancellarmi in ogni momento.</span></label>
+  <p class="wl-msg" role="status" aria-live="polite" hidden></p>
+</form>
+</div>
 
 <h2>Per chi è</h2>
 <ul>
@@ -86,9 +96,18 @@
 </div>
 <div class="todo"><b>Da decidere.</b> Il prezzo di ingresso, anche gratuito se serve a costruire la lista di contatti, e la piattaforma di erogazione. Il pulsante di acquisto va collegato al checkout quando il corso sarà online, con informativa sul recesso per i consumatori.</div>
 
-<h2 id="lista-attesa">Lista d'attesa</h2>
+<h2>Lista d'attesa</h2>
 <p>Iscriviti per ricevere l'annuncio dell'apertura e le condizioni riservate ai primi iscritti.</p>
-<div class="todo"><b>Modulo di iscrizione.</b> Qui va inserito il modulo della newsletter del sito, con informativa privacy e consenso.</div>
+<div class="wl-box">
+  <form class="wl" data-waitlist novalidate>
+  <input type="hidden" name="interesse" value="intro">
+  <label class="wl-label" for="wl-intro-bottom">La tua email</label>
+  <div class="wl-row"><input id="wl-intro-bottom" type="email" name="email" placeholder="nome@esempio.it" autocomplete="email" required><button class="btn" type="submit">Avvisami quando apre</button></div>
+  <label class="wl-consent"><input type="checkbox" name="consenso" required> <span>Acconsento al trattamento della mia email per ricevere l'avviso di apertura, secondo l'informativa privacy. Posso cancellarmi in ogni momento.</span></label>
+  <p class="wl-msg" role="status" aria-live="polite" hidden></p>
+</form>
+</div>
+<div class="todo"><b>Da collegare.</b> Questo modulo è dimostrativo e non invia nulla. Su WordPress va sostituito con il modulo di un plugin di newsletter: indirizzo email, consenso esplicito, informativa privacy, conferma via email (doppio consenso) e un campo nascosto "interesse" per distinguere le iscrizioni ai diversi corsi. Il fornitore dello strumento va nominato responsabile del trattamento.</div>
 
 <h2>Chi lo tiene</h2>
 <p>Francesco Foglio. Lavoro su compliance e protezione dei dati e su come l'intelligenza artificiale entra nel lavoro di chi governa queste funzioni. Per saperne di più, <a href="chi-sono.html">chi sono</a>.</p>

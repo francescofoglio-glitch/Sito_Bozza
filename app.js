@@ -134,3 +134,18 @@
     });
   }
 })();
+
+(function(){
+  document.querySelectorAll('form[data-waitlist]').forEach(function(f){
+    f.addEventListener('submit', function(e){
+      e.preventDefault();
+      var msg = f.querySelector('.wl-msg'), em = f.querySelector('input[type=email]'), cb = f.querySelector('input[type=checkbox]');
+      msg.hidden = false;
+      if(!em.value || !em.checkValidity()){ msg.className = 'wl-msg err'; msg.textContent = 'Inserisci un indirizzo email valido.'; em.focus(); return; }
+      if(!cb.checked){ msg.className = 'wl-msg err'; msg.textContent = 'Per iscriverti serve il consenso al trattamento della tua email.'; cb.focus(); return; }
+      msg.className = 'wl-msg';
+      msg.textContent = 'Modulo dimostrativo: in questa bozza l\'indirizzo non viene inviato né salvato. Nel sito pubblicato qui comparirà la conferma di iscrizione.';
+      f.reset();
+    });
+  });
+})();

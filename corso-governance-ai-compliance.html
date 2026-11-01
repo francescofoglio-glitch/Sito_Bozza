@@ -28,7 +28,7 @@
     <span><b>Francesco Foglio</b><small>AI e governance per la compliance</small></span>
   </a>
   <button class="menu-btn" id="menuBtn" type="button" aria-controls="mainNav" aria-expanded="false">Menu</button>
-  <nav class="main" id="mainNav" aria-label="Principale"><a href="corsi.html" aria-current="page">Corsi</a><a href="articoli.html">Articoli</a><a href="playbook.html">Playbook</a><a href="chi-sono.html">Chi sono</a><a class="btn sm" href="corso-introduzione-ai-act.html">Inizia dal corso</a></nav>
+  <nav class="main" id="mainNav" aria-label="Principale"><a href="corsi.html" aria-current="page">Corsi</a><a href="articoli.html">Articoli</a><a href="playbook.html">Playbook</a><a href="chi-sono.html">Chi sono</a><a class="btn sm" href="corso-introduzione-ai-act.html#lista-attesa">Lista d'attesa</a></nav>
 </div></header>
 <main id="content"><div class="wrap narrow"><nav class="crumbs" aria-label="Percorso"><a href="index.html">Home</a> / <a href="corsi.html">Corsi</a> / Governance AI per la funzione compliance</nav>
 <p class="kicker">Pacchetto per la funzione compliance</p>
@@ -91,7 +91,15 @@
 
 <h2 id="lista-attesa">Lista d'attesa</h2>
 <p>Iscriviti per ricevere l'annuncio dell'apertura, una lezione di prova e le condizioni riservate ai primi iscritti.</p>
-<div class="todo"><b>Modulo di iscrizione.</b> Qui va inserito il modulo della newsletter del sito, con informativa privacy e consenso.</div>
+<div class="wl-box">
+  <form class="wl" data-waitlist novalidate>
+  <input type="hidden" name="interesse" value="compliance">
+  <label class="wl-label" for="wl-compliance">La tua email</label>
+  <div class="wl-row"><input id="wl-compliance" type="email" name="email" placeholder="nome@esempio.it" autocomplete="email" required><button class="btn" type="submit">Avvisami quando apre</button></div>
+  <label class="wl-consent"><input type="checkbox" name="consenso" required> <span>Acconsento al trattamento della mia email per ricevere l'avviso di apertura, secondo l'informativa privacy. Posso cancellarmi in ogni momento.</span></label>
+  <p class="wl-msg" role="status" aria-live="polite" hidden></p>
+</form>
+</div>
 
 <h2>Chi lo tiene</h2>
 <p>Francesco Foglio. Lavoro su compliance e protezione dei dati e su come l'intelligenza artificiale entra nel lavoro di chi governa queste funzioni. Per saperne di più, <a href="chi-sono.html">chi sono</a>.</p>
