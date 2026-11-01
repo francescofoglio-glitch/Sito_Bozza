@@ -45,7 +45,7 @@ Obiettivo del sito: posizionare l'autore come professionista competente e portar
 I moduli sono presenti in home (in alto e in fondo), nella pagina Corsi, nel corso introduttivo (in alto e in fondo) e nel pacchetto Compliance. Nella bozza sono dimostrativi e non inviano né salvano nulla. Su WordPress vanno sostituiti con un plugin di newsletter, con consenso esplicito, informativa privacy, conferma via email e un campo "interesse" (generale, intro, compliance).
 
 ## Segnaposto ancora aperti
-- Foto e elementi di credibilità nella sezione Chi sono della home.
+- Foto nella sezione Chi sono della home. I testi di Chi sono (home, pagina dedicata, schede dei corsi) sono ricavati dal CV dell'autore, senza nomi di società e di clienti né recapiti personali: da confermare prima della pubblicazione.
 - Strumento e impostazioni della lista d'attesa (doppio consenso, informativa, nomina del fornitore a responsabile del trattamento).
 - Prezzo di ingresso del corso introduttivo (anche gratuito per costruire la lista), piattaforma di vendita e di erogazione, licenze per organizzazioni, recesso per i consumatori, durata dell'accesso.
 - Contenuti e calendario dell'AI Act nel corso introduttivo: da validare sul testo ufficiale in vigore.
